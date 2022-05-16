@@ -1,7 +1,8 @@
-const SingleDay = 'tr53.herokuapp.com'
-const DoubleDay = 'rt53.herokuapp.com'
+
 export default {
     async fetch(request, env) {
+      const SingleDay = 'tr53.herokuapp.com'
+      const DoubleDay = 'rt53.herokuapp.com'
       let nd = new Date();
       if (nd.getDate()%2) {
           host = SingleDay
