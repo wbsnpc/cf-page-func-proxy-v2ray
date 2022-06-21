@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="testv2app.wbsnpc.workers.dev";
+        url.hostname="163.172.67.56:17263";
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
